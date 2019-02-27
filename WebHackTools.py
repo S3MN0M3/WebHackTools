@@ -5,7 +5,8 @@ def reverseiplookup(main):
     site = input("Digite o ip ou a host: ")
     r = requests.get('http://api.hackertarget.com/reverseiplookup/?q={}'.format(site))
     print(r.text)
-    input("Press Enter")    
+    input("Press Enter") 
+    os.system("cls")
     main()
 
 def nmap(main):
@@ -13,6 +14,7 @@ def nmap(main):
     r = requests.get('http://api.hackertarget.com/nmap/?q={}'.format(site))
     print(r.text)
     input("Press Enter")
+    os.system("cls")
     main()    
 
 def geoip(main):
@@ -20,6 +22,7 @@ def geoip(main):
     r = requests.get('http://api.hackertarget.com/geoip/?q={}'.format(site))
     print(r.text)
     input("Press Enter")
+    os.system("cls")
     main()
 
 def reversedns(main):
@@ -27,6 +30,7 @@ def reversedns(main):
     r = requests.get('https://api.hackertarget.com/reversedns/?q={}'.format(site))
     print(r.text)
     input("Press Enter")
+    os.system("cls")
     main()
 
 def dns(main):
@@ -34,6 +38,7 @@ def dns(main):
     r = requests.get('http://api.hackertarget.com/dnslookup/?q={}'.format(site))
     print(r.text)
     input("Press Enter")
+    os.system("cls")
     main()
 
 def whois(main):
@@ -42,6 +47,7 @@ def whois(main):
     #os.system("cls")
     print(r.text)
     input("Press Enter")
+    os.system("cls")
     main()
 
 def main():
